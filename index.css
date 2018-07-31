@@ -1,0 +1,141 @@
+.chat{
+    width:100%;
+    height:auto;
+    background-color:rgba(255, 255, 255, 1);
+}
+
+.chat--header{
+    height:27px;
+    background-color:#EEEEEE;
+    padding:3px;
+    font-size:12px;
+    border-bottom:1px solid #ccc;
+
+}
+
+.chat--title{
+    margin-top:7px;
+    color: rgba(68, 68, 68, 1);
+}
+
+.chat--menu{
+    background-color:#EEEEEE;
+    width:30px;
+    margin-top:-17px;
+    float:right;
+}
+
+.chat--friends{
+    width:185px;
+    height:100%;
+    background-color:#eeeeee;
+    float:right;
+    margin-right:-200px;
+    margin-top:-107px;
+    padding:8px;
+    clear:both;
+    font-size:12px;
+    border-top:1px solid #ccc;
+    border-left:1px solid #ccc;
+    
+}
+
+.chat--friend{
+    height:38px;
+    width:150px;
+    margin-bottom:-10px;
+    float:left;
+    clear:both;
+}
+
+.chat--dot{
+    background-color:rgba(153, 153, 153, 1);
+    width:8px;
+    height:8px;
+    margin-top:5px;
+    margin-right:4px;
+    border-radius:5px;
+    float:left;
+}
+
+.chat--dot.-online{
+    background-color:rgba(0, 153, 0, 1);
+}
+
+.chat--body{
+    width:80%;
+    height:auto;
+    float:left;
+    background-color:#eeeeee;
+    clear:both;
+}
+
+.chat--text{
+    background-color:rgba(255, 255, 255, 1);
+    width:85px;
+    border-radius:4px;
+    padding:2px;
+
+}
+
+.chat--message{
+    margin-left:8px;
+    float:left;
+    clear:both;
+}
+
+.chat--message.-outgoing{
+    margin-right:8px;
+    float:right;
+}
+
+.chat--info{
+    color:black;
+    margin-left:-6px;
+    font-size:10px;
+}
+
+.-outgoing > .chat--info{
+    margin-right:0px;
+    font-size:10px;
+    float:right;
+}
+
+.chat--new-message{
+    clear:both;
+    position: absolute;
+    bottom:0px;
+    height:62px;
+    width:441px;
+    border-top:1px solid #ccc;
+}
+
+.chat--input{
+    width:380px;
+    height:50px;
+
+}
+
+.chat--submit{
+    height:33px;
+}
+
+.chat--submit > svg{
+    fill:black;
+    float:right;
+    margin-right:15px;
+    margin-top:-40px;
+}
+
+@media screen and (max-width: 400px){
+    .chat--menu > svg {
+      width:30px;
+      margin-top:0px;
+      fill: black;
+      float:right;
+ }
+    
+    .chat--friends{
+        display:none;
+    }
+}
